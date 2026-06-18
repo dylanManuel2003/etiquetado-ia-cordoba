@@ -136,7 +136,11 @@ ul.clean li .b{flex:0 0 auto; width:28px;height:28px;border-radius:8px; display:
 .quote{font-size:clamp(22px,3vw,42px); font-weight:900; line-height:1.18; max-width:22ch; letter-spacing:-.6px;}
 .quote .hl{color:#8fd0ff;}
 
-@media(max-width:760px){ .g4,.g3,.g2,.cols,.asimov-flow{grid-template-columns:1fr;} .barrow{grid-template-columns:120px 1fr;} }
+.participants{display:grid; grid-template-columns:repeat(4,1fr); gap:14px 30px; margin-top:18px; max-width:1060px;}
+.participants .pp{display:flex; align-items:center; gap:11px; font-size:clamp(13px,1.1vw,18px); color:#33445a; font-weight:600;}
+.participants .pp::before{content:""; width:9px;height:9px;border-radius:50%; background:var(--blue2); flex:0 0 auto;}
+
+@media(max-width:760px){ .g4,.g3,.g2,.cols,.asimov-flow{grid-template-columns:1fr;} .participants{grid-template-columns:repeat(2,1fr);} .barrow{grid-template-columns:120px 1fr;} }
 </style>
 </head>
 <body>
@@ -144,7 +148,7 @@ ul.clean li .b{flex:0 0 auto; width:28px;height:28px;border-radius:8px; display:
 <div id="progress"></div>
 <div id="brandtag"><img src="gs-cordoba.png" alt="Global Shapers Córdoba"></div>
 <div id="wefcorner"><img src="wef.svg" alt="World Economic Forum"></div>
-<div id="count">01 / 13</div>
+<div id="count">01 / 14</div>
 
 <div id="deck">
 
@@ -158,7 +162,7 @@ ul.clean li .b{flex:0 0 auto; width:28px;height:28px;border-radius:8px; display:
     <div class="kicker anim d2" style="margin-top:40px">Inteligencia Artificial · Transparencia digital · 2026</div>
     <h1 class="anim d3">Etiquetado de contenidos<br>generados por <span class="hl">inteligencia artificial</span></h1>
     <p class="lead anim d4" style="margin-top:22px">Por qué importa identificar lo sintético, cómo se hace técnicamente y qué nos enseña la ciencia ficción sobre regular máquinas inteligentes.</p>
-    <p class="lead anim d5" style="margin-top:30px; font-size:15px; color:var(--muted)">Dylan Peralta Salerno · AI Engineer — Global Shapers Córdoba</p>
+    <p class="lead anim d5" style="margin-top:30px; font-size:15px; color:var(--muted)">Global Shapers Córdoba Hub · World Economic Forum</p>
   </section>
 
   <!-- 2 EL PROBLEMA -->
@@ -199,7 +203,7 @@ ul.clean li .b{flex:0 0 auto; width:28px;height:28px;border-radius:8px; display:
 
   <!-- 5 ROBUSTEZ -->
   <section class="slide tint">
-    <div class="kicker anim d1">La verdad técnica · mi diferencial</div>
+    <div class="kicker anim d1">La verdad técnica</div>
     <h2 class="anim d2">Robustez real de cada <span class="hl">marca</span></h2>
     <div class="bars">
       <div class="barrow anim d3"><div class="lbl">Watermark embebido<small>SynthID — en el contenido</small></div><div class="track"><div class="val" style="--w:82%;background:linear-gradient(90deg,var(--ok),#3fbf77)">robustez alta</div></div></div>
@@ -321,7 +325,7 @@ ul.clean li .b{flex:0 0 auto; width:28px;height:28px;border-radius:8px; display:
       <span class="sep"></span>
       <img class="wef" src="wef.svg" alt="World Economic Forum">
     </div>
-    <p class="lead anim d6" style="margin-top:16px; font-size:14px; color:#bfe0f7">Dylan Peralta Salerno · AI Engineer</p>
+    <p class="lead anim d6" style="margin-top:16px; font-size:14px; color:#bfe0f7">Global Shapers Córdoba Hub · World Economic Forum</p>
   </section>
 
   <!-- 13 GRACIAS -->
@@ -334,6 +338,28 @@ ul.clean li .b{flex:0 0 auto; width:28px;height:28px;border-radius:8px; display:
     <h1 class="anim d2" style="margin-top:38px">Gracias.</h1>
     <p class="lead anim d3" style="margin-top:18px">Preguntas y debate.</p>
     <p class="lead anim d4" style="margin-top:30px; font-size:15px; color:var(--muted)">Global Shapers Córdoba Hub · World Economic Forum</p>
+  </section>
+
+  <!-- 14 PARTICIPANTES -->
+  <section class="slide">
+    <div class="logo-row anim d1">
+      <img class="gs" src="gs-cordoba.png" alt="Global Shapers Córdoba">
+      <span class="sep"></span>
+      <img class="wef" src="wef.svg" alt="World Economic Forum">
+    </div>
+    <div class="kicker anim d2" style="margin-top:34px">Equipo</div>
+    <h2 class="anim d2">Participantes</h2>
+    <div class="participants">
+      <div class="pp anim d3">Tomás Gordillo</div>
+      <div class="pp anim d3">Lucio Mateo Reinhardt</div>
+      <div class="pp anim d4">Victoria Lerda</div>
+      <div class="pp anim d4">Martina Marques</div>
+      <div class="pp anim d5">Dylan Peralta Salerno</div>
+      <div class="pp anim d5">María Victoria Fluxa Córdoba</div>
+      <div class="pp anim d6">María del Carmen Torino</div>
+      <div class="pp anim d6">Valentina Milagros Leonardi Torres</div>
+    </div>
+    <p class="lead anim d7" style="margin-top:34px; font-size:15px; color:var(--muted)">Global Shapers Córdoba Hub · World Economic Forum</p>
   </section>
 
 </div>
